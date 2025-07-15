@@ -1,0 +1,20 @@
+### GET ALL ITEMS
+GET /items HTTP/1.1
+Host: localhost:5000
+### GET SINGLE ITEM
+GET /item/1 HTTP/1.1
+Host: localhost:5000
+
+### ADD NEW ITEM
+POST /item HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+
+{
+    "name": "New Item",
+    "description": "This is a new item"
+}
+
+### DELETE SINGLE ITEM
+DELETE /item/3 HTTP/1.1
+Host: localhost:5000
