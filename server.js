@@ -34,7 +34,7 @@ fastify.register(require('./routes/items')); // Registering the items routes
 
 const start = async () => {
     try {
-        await fastify.listen({ port: Port });
+        await fastify.listen({ port: Port , host: '0.0.0.0'});
         fastify.log.info(`Server is running on http://localhost:${Port}`);
     } catch (err) {
         fastify.log.error(err);
